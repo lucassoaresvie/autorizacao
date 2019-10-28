@@ -1,0 +1,40 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+      <div class="ion-padding">
+  <ion-item>
+        <ion-label position="floating"> Nome: </ion-label>
+        <ion-input  type="text" [(ngModel)]="contato.nome" placeholder="Digite o seu nome:"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label position="floating"> CPF: </ion-label>
+        <ion-input  type="text" [(ngModel)]="contato.cpf" placeholder ="Insira seu CPF:"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label position="floating"> Nome do aluno : </ion-label>
+        <ion-input  type="text" [(ngModel)]="contato.aluno" placeholder ="Digite o nome do aluno:"></ion-input>
+      </ion-item>
+      <ion-item >
+        <ion-label position="floating"> Parentesco: </ion-label>
+        <ion-input  type="text" [(ngModel)]="contato.parentesco" placeholder ="Insira o seu parentesco:"></ion-input>
+      </ion-item>
+
+      <ion-item >
+        <ion-label position="floating"> Email: </ion-label>
+        <ion-input  type="text" [(ngModel)]="contato.email" placeholder ="Insira seu email:"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating"> Senha: </ion-label>
+        <ion-input  type="password" [(ngModel)]="contato.senha" placeholder ="Insira sua senha:"></ion-input>
+      </ion-item>
+
+      <ion-button  (click)="salvar()" expand="full" shape="around"> Salvar </ion-button>
+      <ion-button href="home" expand="full" shape="around"> Voltar </ion-button>
+      <ion-button href="listar" expand="full" shape="around"> Lista </ion-button>
+      </div>
+</ion-content>
