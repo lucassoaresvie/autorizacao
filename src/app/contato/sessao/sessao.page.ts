@@ -7,11 +7,11 @@ import { Router } from '@angular/router';
 
 
 @Component({
-  selector: 'app-cadastro',
-  templateUrl: './cadastro.page.html',
-  styleUrls: ['./cadastro.page.scss'],
+  selector: 'app-sessao',
+  templateUrl: './sessao.page.html',
+  styleUrls: ['./sessao.page.scss'],
 })
-export class CadastroPage implements OnInit {
+export class SessaoPage implements OnInit {
 
 contato: Contato = new Contato();
 

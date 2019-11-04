@@ -1,15 +1,24 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
+  <ion-toolbar color="Dark">
+    <ion-title color="primary">
       Autorização
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="success">
   <div class="ion-padding">
-  <p> Valide sua autorização de forma rápida e eficiente </p>
-    <ion-button href="cadastro" expand ="full" shape="around"> Cadastro do responsavel:</ion-button>
-    
+    <p> Valide sua autorização de forma rapida e eficiente </p>
+    <ion-input [(ngModel)]="login.email" color="light" expand="full" shape="around">Email:</ion-input>
+    <ion-input [(ngModel)]="login.senha" type="password" color="light" expand="full" shape="around">Senha:</ion-input>
+
+    <ion-button color="light" expand="full" shape="around" (click)="logar()" expand="full" shape="around">
+      <ion-text >Entrar</ion-text>
+    </ion-button>
+    <ion-button href="cadastro" color="light" expand ="full" shape="around"> Cadastro do Responsavel</ion-button>
+        <ion-button href="sessao" color="light" expand ="full" shape="around"> Cadastro para Sessão Pedagógica </ion-button>
+    <ion-button (click)="redefinir()" expand="block" color="light"> Esqueceu sua senha? </ion-button>
+
+
   </div>
 </ion-content>

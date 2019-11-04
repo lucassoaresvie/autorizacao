@@ -1,18 +1,31 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-
+import { FormsModule } from '@angular/forms';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFireDatabaseModule} from '@angular/fire/database';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
-
+import { CadastroPage } from './contato/cadastro/cadastro.page';
+import { ListarPage } from './contato/listar/listar.page';
+import { SessaoPage } from './contato/sessao/sessao.page';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CadastroPage, ListarPage, SessaoPage],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, AngularFireModule.initializeApp({
+    apiKey: "AIzaSyAPAciTBLmosYXrRdEQDHUrc6H9yGuxSv0",
+    authDomain: "icone-e3916.firebaseapp.com",
+    databaseURL: "https://icone-e3916.firebaseio.com",
+    projectId: "icone-e3916",
+    storageBucket: "icone-e3916.appspot.com",
+    messagingSenderId: "956262214826",
+    appId: "1:956262214826:web:b827e135998b835c32b4d3",
+    measurementId: "G-22Y9444LZ9"
+  }),AngularFireDatabaseModule],
   providers: [
     StatusBar,
     SplashScreen,
