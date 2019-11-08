@@ -1,5 +1,7 @@
 {
   "name": "autorizacao",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

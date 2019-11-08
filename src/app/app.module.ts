@@ -10,11 +10,12 @@ import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { CadastroPage } from './contato/cadastro/cadastro.page';
 import { ListarPage } from './contato/listar/listar.page';
 import { SessaoPage } from './contato/sessao/sessao.page';
+import { AutorizarPage } from './contato/autorizar/autorizar.page';
+import { ListarSecaoPage } from './contato/listar-secao/listar-secao.page';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-
 @NgModule({
-  declarations: [AppComponent, CadastroPage, ListarPage, SessaoPage],
+  declarations: [AppComponent, CadastroPage, ListarPage, SessaoPage, AutorizarPage, ListarSecaoPage],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, AngularFireModule.initializeApp({
     apiKey: "AIzaSyAPAciTBLmosYXrRdEQDHUrc6H9yGuxSv0",
@@ -29,7 +30,7 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [
     StatusBar,
     SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy}
   ],
   bootstrap: [AppComponent]
 })
