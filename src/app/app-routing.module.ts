@@ -14,7 +14,6 @@ const routes: Routes = [
   { path: 'sessao', component: SessaoPage },
   { path: 'autorizar', component: AutorizarPage },
   { path: 'listar-secao', component: ListarSecaoPage },
-
 ];
 
 @NgModule({

@@ -1,6 +1,6 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>cadastro</ion-title>
+  <ion-toolbar color="success">
+    <ion-title color="dark">cadastro</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -33,8 +33,8 @@
         <ion-input  type="password" [(ngModel)]="contato.senha" placeholder ="Insira sua senha:"></ion-input>
       </ion-item>
 
-      <ion-button  (click)="salvar()" expand="full" shape="around"> Salvar </ion-button>
-      <ion-button href="home" expand="full" shape="around"> Voltar </ion-button>
-      <ion-button href="autorizar" expand="full" shape="around"> Proximo </ion-button>
+      <ion-button  click="logar()"(click)="salvar()" expand="full" shape="around"color="success"> Salvar </ion-button>
+      <ion-button href="home" expand="full" shape="around"color="success"> Voltar </ion-button>
+      <ion-button href="autorizar" expand="full" shape="around" color="success"> Proximo </ion-button>
       </div>
 </ion-content>

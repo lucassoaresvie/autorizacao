@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 @Component({
   selector: 'app-autorizar',
   templateUrl: './autorizar.page.html',
@@ -6,11 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AutorizarPage implements OnInit {
 
-  constructor() { }
-
+  constructor() {}
+  salvar (){
+    alert('sucesso!!');
+  }
   ngOnInit() { }
 
-
-   
-
+ 
 }
