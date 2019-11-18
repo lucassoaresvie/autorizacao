@@ -13,7 +13,8 @@ const routes: Routes = [
    { path: 'listar', component: ListarPage },
   { path: 'sessao', component: SessaoPage },
   { path: 'autorizar', component: AutorizarPage },
-  { path: 'listar-secao', component: ListarSecaoPage },
+  { path: 'listar-secao', component: ListarSecaoPage },  { path: 'receber', loadChildren: './contato/receber/receber.module#ReceberPageModule' },
+
 ];
 
 @NgModule({
