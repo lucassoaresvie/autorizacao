@@ -25,6 +25,7 @@ logar(){
 this.afAuth.auth.signInWithEmailAndPassword(this.login.email, this.login.senha).then(
 () => { this.rota.navigate(['cadastro']); }
 ).catch( (erro) => console.log(erro) );
+
 }
 
 

@@ -1,17 +1,62 @@
 <ion-header>
   <ion-toolbar color="success">
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="home"color="tertiary"></ion-back-button>
+  </ion-buttons>
     <ion-title color="dark">autorização para liberação de aluno</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
   <p>EU <ion-input></ion-input> portador(a) do R.G ou CPF <ion-input></ion-input>
-    autorizo a saida do(a) aluno(a) <ion-input></ion-input> matriculado(a) no <ion-input></ion-input> ano do curso
-    tecnico em <ion-input></ion-input> pelo motivo <ion-input></ion-input>
-    Grau de Parentesco: <ion-input></ion-input>
-    Data: <ion-input></ion-input>
-    Horario: <ion-input></ion-input>
+    autorizo a saida do(a) aluno(a)<ion-input></ion-input>
+          Matriculado(a) no
+    <ion-item>
+        <ion-label color="tertiary">Periodo</ion-label>
+        <ion-select>
+        <ion-select-option value="Periodo">1°ano</ion-select-option>
+        <ion-select-option value="Periodo">2°ano</ion-select-option>
+        <ion-select-option value="Periodo">3°ano</ion-select-option>
+        <ion-select-option value="Periodo">4°ano</ion-select-option>
+        </ion-select>
+      </ion-item>
+     do curso tecnico em
+     <ion-item>
+         <ion-label color="tertiary">Curso</ion-label>
+         <ion-select>
+         <ion-select-option value="curso"> Informática</ion-select-option>
+         <ion-select-option value="curso"> AgroIndustria</ion-select-option>
+         <ion-select-option value="Curso"> Mecatrônica</ion-select-option>
+         <ion-select-option value="curso"> Eletromecânica</ion-select-option>
+         </ion-select>
+       </ion-item>
+     pelo motivo <ion-input></ion-input>
+    Grau de Parentesco:
+    <ion-item>
+        <ion-label color="tertiary">Parentesco</ion-label>
+        <ion-select>
+        <ion-select-option value="mae"> Mãe</ion-select-option>
+        <ion-select-option value="pai"> Pai </ion-select-option>
+        <ion-select-option value="avo"> Avô</ion-select-option>
+        <ion-select-option value="vo"> Avó</ion-select-option>
+        <ion-select-option value="irmao"> Irmão</ion-select-option>
+        </ion-select>
+      </ion-item>
+    Data:
+    <ion-item>
+      <ion-label color="tertiary">Selecione o dia</ion-label>
+      <ion-datetime
+        monthValues='1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12'
+        yearValues='2019,2020, 2021, 2022, 2023, 2024, 2025, 2026'
+        dayValues="01,02,03,04,05,06,08,09,10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31"
+        displayFormat="DD/MMM/YYYY"
+      ></ion-datetime>
+    </ion-item>
+    Horario:
+    <ion-item>
+      <ion-label position="floating" color = "tertiary">hora/minutos/segundos</ion-label>
+      <ion-datetime displayFormat="H/mm/s"></ion-datetime>
+    </ion-item>
   </p>
-   <ion-button href="receber" expand="full" shape="around" color="success"> Enviar </ion-button>
-       <ion-button href="home" expand="full" shape="around" color="success"> Voltar </ion-button>
+   <ion-button href="receber"expand="full" shape="around" color="success">	Enviar</ion-button>
 </ion-content>

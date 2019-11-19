@@ -13,5 +13,5 @@ export class AutorizarPage implements OnInit {
   }
   ngOnInit() { }
 
- 
+
 }
