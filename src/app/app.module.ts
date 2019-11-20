@@ -12,10 +12,11 @@ import { ListarPage } from './contato/listar/listar.page';
 import { SessaoPage } from './contato/sessao/sessao.page';
 import { AutorizarPage } from './contato/autorizar/autorizar.page';
 import { ListarSecaoPage } from './contato/listar-secao/listar-secao.page';
+import { ReceberPage } from './contato/receber/receber.page';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 @NgModule({
-  declarations: [AppComponent, CadastroPage, ListarPage, SessaoPage, AutorizarPage, ListarSecaoPage],
+  declarations: [AppComponent, CadastroPage, ListarPage, SessaoPage, AutorizarPage, ListarSecaoPage, ReceberPage],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, FormsModule, AngularFireModule.initializeApp({
     apiKey: "AIzaSyAPAciTBLmosYXrRdEQDHUrc6H9yGuxSv0",

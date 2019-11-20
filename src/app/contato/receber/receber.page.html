@@ -8,5 +8,19 @@
 </ion-header>
 
 <ion-content>
+  <ion-list>
+    <ion-item *ngFor="let contato of listaContatos | async">
+      <ion-label>{{ contato.nome }}</ion-label>
+      <ion-label>{{ contato.cpf }}</ion-label>
+      <ion-label>{{ contato.estudante }}</ion-label>
+      <ion-label>{{ contato.periodo }}</ion-label>
+      <ion-label>{{ contato.curso }}</ion-label>
+      <ion-label>{{ contato.motivo }}</ion-label>
+      <ion-label>{{ contato.parentesco }}</ion-label>
+      <ion-label>{{ contato.data }}</ion-label>
+      <ion-label>{{ contato.hora}}</ion-label>
+      <ion-button (click) = "excluir(contato.key)"color="success"><ion-icon name="trash"></ion-icon></ion-button>
 
+    </ion-item>
+  </ion-list>
 </ion-content>

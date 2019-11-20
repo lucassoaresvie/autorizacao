@@ -10,51 +10,33 @@
 <ion-content>
       <div class="ion-padding">
         <ion-item>
-        <label class="item item-input item-stacked-label">
-         <span class="input-label">Nome</span>
-         <input type="text" name="nome" ng-model="model.nome" minlength="10" required>
-         <span class="error" ng-show="contato.nome.$error.required && !contato.nome.$pristine"color="red">Nome é obrigatório</span>
-        </label>
-      </ion-item>
+           <ion-label position="floating"> Nome: </ion-label>
+           <ion-input  type="text" [(ngModel)]="contato.nome" placeholder="Digite o seu nome:"></ion-input>
+         </ion-item>
       <br>
-        <ion-item>
-        <label class="item item-input item-stacked-label"  ng-class="{ 'input-error' : contato.nome.$invalid && !contato.nome.$pristine }">
-         <span class="input-label">CPF</span>
-         <input type="number" name="CPF" ng-model="model.cpf" minlength="11" required>
-         <span class="error" ng-show="contato.cpf.$error.required && !contato.cpf.$pristine"color="red">     CPF é obrigatório</span>
-        </label>
+      <ion-item >
+         <ion-label position="floating"> CPF: </ion-label>
+         <ion-input  type="text" [(ngModel)]="contato.cpf" placeholder ="Insira seu CPF:"></ion-input>
       </ion-item>
       <br>
       <ion-item >
-        <label class="item item-input item-stacked-label">
-         <span class="input-label">Nome do aluno</span>
-         <input type="text" name="aluno" ng-model="model.aluno" minlength="10" required>
-         <span class="error" ng-show="contato.aluno.$error.required && !contato.aluno.$pristine">      Nome do aluno é obrigatório</span>
-        </label>
+      <ion-label position="floating"> Nome do aluno : </ion-label>
+      <ion-input  type="text" [(ngModel)]="contato.aluno" placeholder ="Digite o nome do aluno:"></ion-input>
       </ion-item>
       <br>
       <ion-item >
-        <label class="item item-input item-stacked-label"color="danger">
-         <span class="input-label">Parentesco</span>
-         <input type="text" name="parentesco" ng-model="model.parentesco" minlength="10" required>
-         <span class="error" ng-show="contato.parentesco.$error.required && !contato.parentesco.$pristine"color="red">    parentesco é obrigatório</span>
-        </label>
+         <ion-label position="floating"> Parentesco: </ion-label>
+         <ion-input  type="text" [(ngModel)]="contato.parentesco" placeholder ="Insira o seu parentesco:"></ion-input>
       </ion-item>
 <br>
-      <ion-item >
-        <label class="item item-input item-stacked-label">
-         <span class="input-label">Email</span>
-         <input type="text" name="email" ng-model="model.email" minlength="10" required>
-         <span class="error" ng-show="contato.email.$error.required && !contato.email.$pristine"color="red">   email é obrigatório</span>
-        </label>
+<ion-item>
+<ion-label position="floating"> Email: </ion-label>
+      <ion-input  type="text" [(ngModel)]="contato.email" placeholder ="Insira seu email:"></ion-input>
       </ion-item>
 <br>
       <ion-item>
-        <label class="item item-input item-stacked-label">
-         <span class="input-label">Senha</span>
-         <input type="password" name="senha" ng-model="model.nome" minlength="10" required>
-         <span class="error" ng-show="contato.senha.$error.required && !contato.senha.$pristine"color="red">    Senha é obrigatório</span>
-        </label>
+        <ion-label position="floating"> Senha: </ion-label>
+     <ion-input  type="password" [(ngModel)]="contato.senha" placeholder ="Insira sua senha:"></ion-input>
       </ion-item>
 
       <ion-button  click="logar()"(click)="salvar()" expand="full" shape="around"color="success"> Salvar </ion-button>

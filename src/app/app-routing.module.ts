@@ -6,6 +6,7 @@ import { ListarPage } from './contato/listar/listar.page';
 import { SessaoPage } from './contato/sessao/sessao.page';
 import { AutorizarPage } from './contato/autorizar/autorizar.page';
 import { ListarSecaoPage } from './contato/listar-secao/listar-secao.page';
+import { ReceberPage } from './contato/receber/receber.page';
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
@@ -13,7 +14,8 @@ const routes: Routes = [
    { path: 'listar', component: ListarPage },
   { path: 'sessao', component: SessaoPage },
   { path: 'autorizar', component: AutorizarPage },
-  { path: 'listar-secao', component: ListarSecaoPage },  { path: 'receber', loadChildren: './contato/receber/receber.module#ReceberPageModule' },
+  { path: 'listar-secao', component: ListarSecaoPage },
+   { path: 'receber',component: ReceberPage },
 
 ];
 
