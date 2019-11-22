@@ -21,7 +21,7 @@ export class AutorizarPage implements OnInit {
         this.banco.list('contato').push(this.contato);
 
         this.contato = new Contato();
-        alert('Bem Vindo(a) !!!');
+        alert('autorizado com sucesso');
       }
 
   ngOnInit() { }

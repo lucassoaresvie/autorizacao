@@ -23,7 +23,7 @@ export class HomePage {
 
 logar(){
 this.afAuth.auth.signInWithEmailAndPassword(this.login.email, this.login.senha).then(
-() => { this.rota.navigate(['cadastro']); }
+() => { this.rota.navigate(['autorizar']); }
 ).catch( (erro) => console.log(erro) );
 
 }

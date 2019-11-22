@@ -15,6 +15,8 @@ import { ListarSecaoPage } from './contato/listar-secao/listar-secao.page';
 import { ReceberPage } from './contato/receber/receber.page';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import {AngularFireAuth} from 'angularfire2/auth';
+
 @NgModule({
   declarations: [AppComponent, CadastroPage, ListarPage, SessaoPage, AutorizarPage, ListarSecaoPage, ReceberPage],
   entryComponents: [],
@@ -29,6 +31,7 @@ import { AppRoutingModule } from './app-routing.module';
     measurementId: "G-22Y9444LZ9"
   }),AngularFireDatabaseModule],
   providers: [
+    AngularFireAuth,
     StatusBar,
     SplashScreen,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy}
